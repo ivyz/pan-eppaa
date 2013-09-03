@@ -1,0 +1,5 @@
+      [paste.app_factory]
+      main = paneppaa:main
+      [console_scripts]
+      initialize_paneppaa_db = paneppaa.scripts.initializedb:main
+      
