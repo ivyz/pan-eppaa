@@ -32,6 +32,8 @@
          % for d in dogs:
             <span>Nome: ${d.name}</span><br/>
             <span>Descrizione: ${d.description}</span><br/>
+            <span>Razza: ${d.kind}</span><br/>
+            <span>Taglia: ${d.size}</span><br/><br/>
          %endfor
       </div>
     </div>
