@@ -25,6 +25,32 @@ def dogs_view(request):
 
     return {'dogs':dogs, 'project':'paneppaa'}
 
+@view_config(route_name='dogdetail', renderer='paneppaa:templates/dogdetail.mako')
+def dog_view(request):
+    try:
+        dog = DBSession.query(Dog).filter(Dog.id==request.matchdict['id']).first()
+    except DBAPIError:
+        return Response(conn_err_msg, content_type='text/plain', status_int=500)
+
+    return {'dog':dog}
+
+@view_config(route_name='dogs_json', renderer='json')
+def dogs_json(request):
+    try:
+        dogs = DBSession.query(Dog).order_by('id')
+    except DBAPIError:
+        return dict(success=False, message="Errore")
+
+    result = []
+    for d in dogs:
+        plaindog = {}
+        plaindog['name'] = d.name
+        plaindog['description']= d.description
+        result.append(plaindog)
+
+    return {'dogs': result}
+
+
 conn_err_msg = """\
 Pyramid is having a problem using your SQL database.  The problem
 might be caused by one of the following things:

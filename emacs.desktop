@@ -1,0 +1,95 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Fri Sep  6 09:52:49 2013
+;; Desktop file format version 206
+;; Emacs version 24.3.50.1
+
+;; Global section:
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring nil)
+(setq register-alist '((114 file . "/home/silvia/.emacs.d/starter-kit-registers.el") (109 file . "/home/silvia/.emacs.d/silvia") (98 file . "/home/silvia/.emacs.d/starter-kit-bindings.el") (105 file . "/home/silvia/.emacs.d/init.el")))
+(setq file-name-history '("/home/silvia/airpim/wip/src/apsui/src/airpim/servui/services.py" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/models.py" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/__init__.py" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/models.py" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/views.py" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/setup.py" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/scripts/__init__.py" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/templates/mytemplate.pt" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/CHANGES.txt" "~/Documenti/Silvia/pyramid/" "~/.ido.last" "~/airpim/wip/src/apsui/src/airpim/servui/services_dashboard.js" "~/airpim/wip/src/apsui/src/airpim/servui/static/css/services.css" "~/airpim/wip/src/apsui/src/airpim/servui/services.py" "~/airpim/wip/src/apsui/src/airpim/servui/services_configuration.js" "~/airpim/wip/src/apsui/src/airpim/servui/stats.py" "~/airpim/wip/src/apmobile.gui2/locales/fr/LC_MESSAGES/messages.po" "~/airpim/wip/src/apmobile.gui2/Resources/login.js" "~/airpim/wip/src/apsui/src/airpim/servui/services_stats.js" "~/airpim/wip/src/apsui/src/airpim/servui/services_pos.js" "~/airpim/wip/src/apsui/src/airpim/servui/services_utils.js" "~/airpim/wip/src/api18n/src/airpim/i18n/catalogs/it/LC_MESSAGES/airpim.po" "~/airpim/wip/src/apsui/src/airpim/servui/services_options.js" "~/airpim/wip/src/apmobile.gui2/CHANGELOG.txt" "~/airpim/wip/src/apmobile.gui2/tiapp.xml" "~/airpim/wip/src/apsui/src/airpim/servui/services_charts.js" "~/airpim/wip/src/apsui/src/airpim/servui/services_manager.js" "~/airpim/wip/src/apsui/src/airpim/servui/services_filters.js" "~/airpim/wip/src/apsui/pave-base.cfg" "~/airpim/wip/src/apmobile.gui2/Resources/fidelities.jss"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/views.py"
+  "views.py"
+  'python-mode
+  '(auto-fill-mode yas-minor-mode flymake-mode auto-complete-mode subword-mode whitespace-mode egg-minor-mode)
+  1211
+  '(804 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (column-number-mode . t)))
+
+(desktop-create-buffer 206
+  "/home/silvia/airpim/wip/src/apsui/src/airpim/servui/services.py"
+  "services.py"
+  'python-mode
+  '(auto-fill-mode yas-minor-mode flymake-mode auto-complete-mode subword-mode whitespace-mode egg-minor-mode)
+  84013
+  '(nil nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (column-number-mode . t)))
+
+(desktop-create-buffer 206
+  "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/__init__.py"
+  "__init__.py"
+  'python-mode
+  '(auto-fill-mode yas-minor-mode flymake-mode auto-complete-mode subword-mode whitespace-mode egg-minor-mode)
+  597
+  '(497 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (column-number-mode . t)))
+
+(desktop-create-buffer 206
+  "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/models.py"
+  "models.py"
+  'python-mode
+  '(auto-fill-mode yas-minor-mode flymake-mode auto-complete-mode subword-mode whitespace-mode egg-minor-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (column-number-mode . t)))
+
+(desktop-create-buffer 206
+  "/home/silvia/Documenti/Silvia/pyramid/paneppaa/setup.py"
+  "setup.py"
+  'python-mode
+  '(auto-fill-mode yas-minor-mode flymake-mode auto-complete-mode subword-mode whitespace-mode egg-minor-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (column-number-mode . t)))
+
+(desktop-create-buffer 206
+  "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/templates/mytemplate.pt"
+  "mytemplate.pt"
+  'nxml-mode
+  '(auto-fill-mode yas-minor-mode flyspell-mode egg-minor-mode)
+  1790
+  '(1790 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/silvia/Documenti/Silvia/pyramid/paneppaa/CHANGES.txt"
+  "CHANGES.txt"
+  'text-mode
+  '(auto-fill-mode yas-minor-mode flyspell-mode egg-minor-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+

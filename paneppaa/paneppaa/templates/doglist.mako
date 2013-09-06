@@ -30,6 +30,7 @@
     <div id="bottom">
       <div class="bottom">
          % for d in dogs:
+          <a href="${request.route_url('dogs')}/${d.id}"><span>Nome: ${d.name}</span></a>
             <span>Nome: ${d.name}</span><br/>
             <span>Descrizione: ${d.description}</span><br/>
             <span>Razza: ${d.kind}</span><br/>
