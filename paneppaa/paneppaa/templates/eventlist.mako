@@ -32,7 +32,7 @@
          % for d in events:
           <a href="${request.route_url('events')}/${d.id}"><span>${d.title}</span></a>
             <span>Descrizione: ${d.description}</span><br/>
-            <span>Quando: ${d.data}</span><br/><br/>
+            <span>Quando: ${d.date}</span><br/><br/>
          %endfor
       </div>
     </div>

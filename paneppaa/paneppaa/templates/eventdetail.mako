@@ -23,15 +23,15 @@
     <div id="middle">
       <div class="middle align-center">
         <p class="app-welcome">
-          <span class="app-name">${event.name}</span>
+          <span class="app-name">${event.title}</span>
         </p>
       </div>
     </div>
     <div id="bottom">
       <div class="bottom">
-            <b><span>${event.name}</span></b><br/>
+            <b><span>${event.title}</span></b><br/>
             <span>${event.description}</span><br/>
-            <span>Quando: ${event.data}</span><br/><br/>
+            <span>Quando: ${event.date}</span><br/><br/>
       </div>
     </div>
   </div>
