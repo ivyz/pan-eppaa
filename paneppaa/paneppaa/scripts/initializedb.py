@@ -13,6 +13,7 @@ from ..models import (
     DBSession,
     Dog,
     Base,
+    Event,
     )
 
 def usage(argv):
@@ -30,6 +31,7 @@ def main(argv=sys.argv):
     engine = engine_from_config(settings, 'sqlalchemy.')
     DBSession.configure(bind=engine)
     Base.metadata.create_all(engine)
+    from datetime import date
 
     with transaction.manager:
         dogs = [dict(
@@ -118,3 +120,25 @@ def main(argv=sys.argv):
                 description=dog['description'], image=dog['image'],
                 kind=dog['kind'], size=dog['taglia'])
             DBSession.add(d)
+
+    with transaction.manager:
+        events = [dict(
+            title = 'Paes dei presepi',
+            description = "Cane buonissimo, ha estremo bisogno di coccole, tira un po al guinzaglio ma siamo sicuri che si abituer se avr la possibilit di sfogare le sue energie.",
+            date = date(2012, 12, 25)
+        ),
+        dict(
+            title = 'Mercatino',
+            description = "Cane buonissimo, ha estremo bisogno di coccole, tira un po al guinzaglio ma siamo sicuri che si abituer se avr la possibilit di sfogare le sue energie.",
+            date = date(2013, 7, 8)
+        ),
+        dict(
+            title = 'Porte aperte',
+            description = "Cane buonissimo, ha estremo bisogno di coccole, tira un po al guinzaglio ma siamo sicuri che si abituer se avr la possibilit di sfogare le sue energie.",
+            date = date(2013, 10, 6)
+        )];
+
+        for evt in events:
+            e = Event(title=evt['title'], date=evt['date'],
+                      description=evt['description'])
+            DBSession.add(e)

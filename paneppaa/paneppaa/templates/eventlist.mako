@@ -23,15 +23,17 @@
     <div id="middle">
       <div class="middle align-center">
         <p class="app-welcome">
-          Welcome to <span class="app-name">${project}</span><br/>
-          <a href="${request.route_url('dogs')}">I nostri cani</a>
-          <a href="${request.route_url('events')}">Eventi</a>
-          <a href="${request.route_url('about')}">About</a>
+          Welcome to <span class="app-name">${project}</span> events
         </p>
       </div>
     </div>
     <div id="bottom">
       <div class="bottom">
+         % for d in events:
+          <a href="${request.route_url('events')}/${d.id}"><span>${d.title}</span></a>
+            <span>Descrizione: ${d.description}</span><br/>
+            <span>Quando: ${d.data}</span><br/><br/>
+         %endfor
       </div>
     </div>
   </div>

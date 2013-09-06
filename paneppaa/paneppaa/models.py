@@ -2,6 +2,7 @@ from sqlalchemy import (
     Column,
     Integer,
     Text,
+    Date
     )
 
 from sqlalchemy.ext.declarative import declarative_base
@@ -32,4 +33,18 @@ class Dog(Base):
         self.description = description
         self.size = size
         self.kind = kind
+        self.image = image
+
+class Event(Base):
+    __tablename__ = 'events'
+    id = Column(Integer, primary_key=True)
+    title = Column(Text, unique=True)
+    date = Column(Date)
+    description = Column(Text)
+    image = Column(Text)
+
+    def __init__(self, title, date, description, image=None):
+        self.title = title
+        self.description = description
+        self.date = date
         self.image = image

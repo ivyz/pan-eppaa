@@ -23,15 +23,15 @@
     <div id="middle">
       <div class="middle align-center">
         <p class="app-welcome">
-          Welcome to <span class="app-name">${project}</span><br/>
-          <a href="${request.route_url('dogs')}">I nostri cani</a>
-          <a href="${request.route_url('events')}">Eventi</a>
-          <a href="${request.route_url('about')}">About</a>
+          <span class="app-name">${event.name}</span>
         </p>
       </div>
     </div>
     <div id="bottom">
       <div class="bottom">
+            <b><span>${event.name}</span></b><br/>
+            <span>${event.description}</span><br/>
+            <span>Quando: ${event.data}</span><br/><br/>
       </div>
     </div>
   </div>

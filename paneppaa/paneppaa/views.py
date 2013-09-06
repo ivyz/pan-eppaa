@@ -6,6 +6,7 @@ from sqlalchemy.exc import DBAPIError
 from .models import (
     DBSession,
     Dog,
+    Event
     )
 
 @view_config(route_name='home', renderer='templates/mytemplate.pt')
@@ -50,6 +51,29 @@ def dogs_json(request):
 
     return {'dogs': result}
 
+
+@view_config(route_name='about', renderer='paneppaa:templates/mytemplate.pt')
+def about_view(request):
+    return {'project':'paneppaa'}
+
+
+@view_config(route_name='events', renderer='paneppaa:templates/eventlist.mako')
+def events_view(request):
+    try:
+        events = DBSession.query(Event).order_by('id')
+    except DBAPIError:
+        return Response(conn_err_msg, content_type='text/plain', status_int=500)
+
+    return {'events':events, 'project':'paneppaa'}
+
+@view_config(route_name='eventdetail', renderer='paneppaa:templates/eventdetail.mako')
+def event_view(request):
+    try:
+        event = DBSession.query(Event).filter(Event.id==request.matchdict['id']).first()
+    except DBAPIError:
+        return Response(conn_err_msg, content_type='text/plain', status_int=500)
+
+    return {'event':event}
 
 conn_err_msg = """\
 Pyramid is having a problem using your SQL database.  The problem

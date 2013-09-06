@@ -15,5 +15,8 @@ def main(global_config, **settings):
     config.add_route('dogs', '/dogs')
     config.add_route('dogs_json', '/dogs_json')
     config.add_route('dogdetail', 'dogs/{id}')
+    config.add_route('events', '/events')
+    config.add_route('eventdetail', 'events/{id}')
+    config.add_route('about', '/about')
     config.scan()
     return config.make_wsgi_app()
