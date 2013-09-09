@@ -26,7 +26,9 @@
           Welcome to <span class="app-name">${project}</span><br/>
           <a href="${request.route_url('dogs')}">I nostri cani</a>
           <a href="${request.route_url('events')}">Eventi</a>
-          <a href="${request.route_url('about')}">About</a>
+          <a href="${request.route_url('about')}">Su di noi</a>
+          <a href="${request.route_url('help')}">Aiutaci</a>
+          <a href="${request.route_url('advice')}">Consigli</a>
         </p>
       </div>
     </div>
