@@ -9,6 +9,7 @@ from .models import (
     Event
     )
 
+
 @view_config(route_name='home', renderer='templates/mytemplate.pt')
 def my_view(request):
     try:
@@ -17,6 +18,7 @@ def my_view(request):
         return Response(conn_err_msg, content_type='text/plain', status_int=500)
     return {'name':one.name, 'project':'paneppaa'}
 
+#DOGS
 @view_config(route_name='dogs', renderer='paneppaa:templates/doglist.mako')
 def dogs_view(request):
     try:
@@ -26,6 +28,7 @@ def dogs_view(request):
 
     return {'dogs':dogs, 'project':'paneppaa'}
 
+
 @view_config(route_name='dogdetail', renderer='paneppaa:templates/dogdetail.mako')
 def dog_view(request):
     try:
@@ -34,6 +37,7 @@ def dog_view(request):
         return Response(conn_err_msg, content_type='text/plain', status_int=500)
 
     return {'dog':dog}
+
 
 @view_config(route_name='dogs_json', renderer='json')
 def dogs_json(request):
@@ -52,11 +56,7 @@ def dogs_json(request):
     return {'dogs': result}
 
 
-@view_config(route_name='about', renderer='paneppaa:templates/mytemplate.pt')
-def about_view(request):
-    return {'project':'paneppaa'}
-
-
+#EVENTS
 @view_config(route_name='events', renderer='paneppaa:templates/eventlist.mako')
 def events_view(request):
     try:
@@ -66,6 +66,7 @@ def events_view(request):
 
     return {'events':events, 'project':'paneppaa'}
 
+
 @view_config(route_name='eventdetail', renderer='paneppaa:templates/eventdetail.mako')
 def event_view(request):
     try:
@@ -74,6 +75,25 @@ def event_view(request):
         return Response(conn_err_msg, content_type='text/plain', status_int=500)
 
     return {'event':event}
+
+
+#ABOUT
+@view_config(route_name='about', renderer='paneppaa:templates/about.mako')
+def about_view(request):
+    return {'project':'paneppaa'}
+
+
+#HELP
+@view_config(route_name='help', renderer='paneppaa:templates/help.mako')
+def help_view(request):
+    return {'project':'paneppaa'}
+
+
+#ADVICE
+@view_config(route_name='advice', renderer='paneppaa:templates/advice.mako')
+def advice_view(request):
+    return {'project':'paneppaa'}
+
 
 conn_err_msg = """\
 Pyramid is having a problem using your SQL database.  The problem
