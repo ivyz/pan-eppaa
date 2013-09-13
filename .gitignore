@@ -1,2 +1,4 @@
 *.pyc
 *.db
+emacs.desktop
+.emacs.desktop.lock
