@@ -5,15 +5,22 @@
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
   <meta name="keywords" content="python web application" />
   <meta name="description" content="pyramid web application" />
-  <link rel="shortcut icon" href="${request.static_url('paneppaa:static/favicon.ico')}" />
-  <link rel="stylesheet" href="${request.static_url('paneppaa:static/pylons.css')}" type="text/css" media="screen" charset="utf-8" />
-  <link rel="stylesheet" href="http://static.pylonsproject.org/fonts/nobile/stylesheet.css" media="screen" />
-  <link rel="stylesheet" href="http://static.pylonsproject.org/fonts/neuton/stylesheet.css" media="screen" />
-  <!--[if lte IE 6]>
-  <link rel="stylesheet" href="${request.static_url('paneppaa:static/ie6.css')}" type="text/css" media="screen" charset="utf-8" />
-  <![endif]-->
+    <link href="${request.static_url('paneppaa:static/css/bootstrap.css')}" rel="stylesheet"/>
+    <link href="${request.static_url('paneppaa:static/css/custom-style.css')}" rel="stylesheet"/>
+    <link href="${request.static_url('paneppaa:static/css/bootstrap-responsive.css')}" rel="stylesheet"/>
+    <link href="${request.static_url('paneppaa:static/css/bootstrap.min.css')}" rel="stylesheet"/>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="${request.static_url('paneppaa:static/js/bootstrap.min.js')}"></script>
+    <%namespace file="footer.mako" name="footer"/>
+    <%namespace file="header.mako" name="header"/>
 </head>
 <body>
+  <%block name="header_bar">
+      <%header:insert_header active='about'>
+      ${request}
+  </%header:insert_header>
+</%block>
+
   <div id="wrap">
     <div id="top">
       <div class="top align-center">
@@ -77,8 +84,9 @@
       </div>
     </div>
   </div>
-  <div id="footer">
-    <div class="footer">&copy; Copyright 2013 silvia.zobele@gmail.com</div>
-  </div>
+      <%block name="footer_bar">
+      <%footer:insert_footer show_lang="0"></%footer:insert_footer>
+  </%block>
+
 </body>
 </html>

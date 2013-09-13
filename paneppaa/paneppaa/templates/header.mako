@@ -18,10 +18,11 @@
           %endif
           <a href="${request.route_url('dogs')}">I nostri cani</a>
           </li>
-          <!--li>
-            <a href="adopted.php" class="big">Adottati</a>
-          </li-->
-          <li>
+          % if active == 'about':
+            <li class="active">
+          %else:
+            <li>
+          %endif
           <a href="${request.route_url('about')}">Su di noi</a>
           </li>
           % if active == 'events':
@@ -31,16 +32,26 @@
           %endif
           <a href="${request.route_url('events')}">Eventi</a>
           </li>
-          <li>
+          % if active == 'advice':
+            <li class="active">
+          %else:
+            <li>
+          %endif
           <a href="${request.route_url('advice')}">Consigli</a>
+          </li>
+          % if active == 'help':
+            <li class="active">
+          %else:
+            <li>
+          %endif
+          <a href="${request.route_url('help')}">Aiutaci</a>
           </li>
           <!--li>
             <a href="contact.php" class="big">Contatti</a>
           </li-->
-
-          <li>
-          <a href="${request.route_url('help')}">Aiutaci</a>
-          </li>
+          <!--li>
+            <a href="adopted.php" class="big">Adottati</a>
+          </li-->
         </ul>
       </div>
     </div>
