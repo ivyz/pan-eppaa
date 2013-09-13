@@ -22,8 +22,12 @@
 </%block>
 
   <div class="container">
+    <img src="static/img/fiori.jpg" class="img-rounded"/>
      <div id="middle">
       <div class="middle align-center">
+        <div class="span10">
+          <div class="well well-large well-green margin">
+
       La sigla PAN-EPPAA, acronimo che sta per "Protezione Animali Natura-Ente Provinciale
       Protezione Animali e Ambiente", ne identifica efficacemente gli scopi sociali volti
       a tutelare e proteggere gli animali di ogni genere e specie, nonché il loro habitat.<br/>
@@ -74,10 +78,9 @@
         per informazioni: info@protezioneanimali.tn.it
       </div>
     </div>
-    <div id="bottom">
-      <div class="bottom">
       </div>
     </div>
+
   </div>
       <%block name="footer_bar">
       <%footer:insert_footer show_lang="0"></%footer:insert_footer>
