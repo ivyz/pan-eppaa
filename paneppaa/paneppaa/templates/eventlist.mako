@@ -20,8 +20,7 @@
       ${request}
   </%header:insert_header>
 </%block>
-  <div id="wrap">
-
+  <div class="container">
     <div id="middle">
       <div class="middle align-center">
         <p class="app-welcome">
