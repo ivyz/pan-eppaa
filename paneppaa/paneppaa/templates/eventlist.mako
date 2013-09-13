@@ -21,11 +21,7 @@
   </%header:insert_header>
 </%block>
   <div id="wrap">
-    <div id="top">
-      <div class="top align-center">
-        <div><img src="${request.static_url('paneppaa:static/pyramid.png')}" width="750" height="169" alt="pyramid"/></div>
-      </div>
-    </div>
+
     <div id="middle">
       <div class="middle align-center">
         <p class="app-welcome">
