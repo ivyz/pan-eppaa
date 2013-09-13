@@ -1,0 +1,89 @@
+body {
+    font-size: 14px;
+}
+
+.span4.well {
+    width: 258px;
+    background-color: #E5E5E5;
+    border: 2px solid #93FF93;
+    padding: 10px 19px;
+}
+
+.span4.well.small {
+    width: 178px;
+    background-color: #E5E5E5;
+    border: 2px solid #93FF93;
+    padding: 10px 19px;
+}
+
+h1.title {
+    margin-top: 30px;
+}
+
+.carousel-inner {
+    margin-top: 30px;
+}
+
+div.carousel-caption {
+    background: none repeat scroll 0 0 rgba(0, 30, 0, 0.5);
+    padding: 10px;
+}
+
+p.margin {
+    margin: 10px 0;
+}
+
+div.margin {
+    margin-top: 30px;
+}
+
+.well.well-green  {
+    background-color: #E5E5E5;
+    border: 2px solid #93FF93;
+} 
+
+.copyright {
+    color: #A5A5A5;
+    border: 1px dashed #858585;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 12px;
+} 
+
+.menu {
+    background-color: #93FF93;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+} 
+
+.menu p {
+    background-image: url('../img/paw.png');
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    padding-top: 5px;
+    height: 33px;
+} 
+
+div.container-fluid {
+    padding: 0px;
+} 
+
+ul.nav li a.big {
+    padding: 19px 15px;
+} 
+
+.pagination a.disabled {
+    color: gray;
+} 
+
+.pagination a.current {
+    text-decoration: underline;
+    font-weight: bold;
+} 
+
+.date {
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 25px;
+} 
