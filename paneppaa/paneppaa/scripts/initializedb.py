@@ -36,7 +36,7 @@ def main(argv=sys.argv):
     with transaction.manager:
         dogs = [dict(
             name = 'Terry',
-            image = '/images/dog0.jpg',
+            image = 'Terry_big.jpg',
             description = "Cane buonissimo, ha estremo bisogno di coccole, tira un po al guinzaglio ma siamo sicuri che si abituer se avr la possibilit di sfogare le sue energie.",
             born_year = 3,
             taglia =  'medio-grande',
@@ -44,7 +44,7 @@ def main(argv=sys.argv):
         ),
         dict(
             name= 'Balto',
-            image= '/images/dog1.jpg',
+            image= 'Balto_big.jpg',
             description= "Il bellissimo Balto, ma anche molto diffidente, ha bisogno di incontri conoscitivi.",
             born_year= 4,
             kind= 'Meticcio',
@@ -52,7 +52,7 @@ def main(argv=sys.argv):
         ),
         dict(
             name= 'Bal',
-            image= '/images/dog2.jpg',
+            image= 'Balu_big.jpg',
             description= "Taglia quasi gigante, il nostr Bal da molto tempo al canile,  possessivo con il cibo e con i suoi giochi. Necessita di incontri conoscitivi.",
             born_year= 8,
             kind= 'Labrador',
@@ -60,7 +60,7 @@ def main(argv=sys.argv):
         ),
         dict(
             name= 'Alba',
-            image= '/images/dog3.jpg',
+            image= 'Alba_big.jpg',
             description= "La spaventatissima Alba ha bisogno di un compagno paziente del quale potersi fidare, lambiente ideale un posto tranquillo lontano dai rumori della citt",
             born_year= 4,
             kind= 'Incrocio labrador',
@@ -68,7 +68,7 @@ def main(argv=sys.argv):
         ),
         dict(
             name= 'Feo',
-            image= '/images/dog4.jpg',
+            image= 'Feo_big.jpg',
             description= "Feo  attualmente in fase di recupero perch non socializza bene con tutte le persone",
             born_year= 8,
             kind= 'San Bernardo',
@@ -76,7 +76,7 @@ def main(argv=sys.argv):
         ),
         dict(
             name= 'Spina',
-            image= '/images/dog5.jpg',
+            image= 'Spina_big.jpg',
             description= "Piccola spina, ti fiderai mai di qualcuno Se qualcuno  molto paziente da rispettare le tue paure forse si...",
             born_year= 7,
             kind= 'Incrocio spinone',
@@ -84,7 +84,7 @@ def main(argv=sys.argv):
         ),
         dict(
             name= 'Stuard',
-            image= '/images/dog6.jpg',
+            image= 'Stuard_big.jpg',
             description= "Stuard  un po la mascotte del canile, attualmente  il pi vecchio, ma anche il pi coccolone. Leggermente ipovedente, non va forzato troppo nelle passeggiate.",
             born_year= 10,
             kind= 'Meticcio',
@@ -92,7 +92,7 @@ def main(argv=sys.argv):
         ),
         dict(
             name= 'Black',
-            image= '/images/dog7.jpg',
+            image= 'Black_big.jpg',
             description= "Black  dolcissimo con chi conosce, e diffidente con chi non conosce. Necessita di incontri conoscitivi",
             born_year= 6,
             kind= 'Meticcio',
@@ -100,7 +100,7 @@ def main(argv=sys.argv):
         ),
         dict(
             name= 'Bonnie',
-            image= '/images/dog8.jpg',
+            image= 'Bonnie_big.jpg',
             description= "A dispetto della nomea del Pitbull  dolcissima e coccolosissima. Cediamo solo a persone consapevoli della razza.",
             born_year= 35,
             kind= 'Pitbull',
@@ -108,7 +108,7 @@ def main(argv=sys.argv):
         ),
         dict(
             name= 'Eddy',
-            image= '/images/dog9.jpg',
+            image= 'Eddy_big.jpg',
             description= "Bellissimo Eddy ma molto attaccato al canile perch arriva da una brutta situazione. Necessita quindi di incontri conoscitivi per potersi adattare bene nella sua nuova casa. Necessita quindi di incontri conoscitivi per potersi adattare bene nella sua nuova casa. Necessita quindi di incontri conoscitivi per potersi adattare bene nella sua nuova casa.",
             born_year= 1,
             kind= 'Incrocio da pastore',
