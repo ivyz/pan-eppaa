@@ -113,6 +113,102 @@ def main(argv=sys.argv):
             born_year= 1,
             kind= 'Incrocio da pastore',
             taglia= 'grande'
+        ),
+        dict(
+            name= 'Luna',
+            image= 'Luna_big.jpg',
+            description= "Nata nel 2007. Timida, riservata, rifugge il contatto con gli uomini, ma e perfettamente socializzata con i suoi conspecifici. E stata recuperata e  quindi adottabile. Famiglia consigliata: Nucleo familiare di pochi componenti, anche con bambini.",
+            born_year= 1,
+            kind= 'Meticcio',
+            taglia= 'medio-piccola'
+        ),
+        dict(
+            name= 'Leo',
+            image= 'Leo_big.jpg',
+            description= "Dolcissimo e giocherellone, ha bisogno di sfogare le sue energie correndo nelle passeggiate con il suo futuro migliore amico. Pu stare sia in casa che in giardino, ma se viene tenuto in casa ha bisogno di essere stimolato altrimenti se la prenderà con i mobili. Consigliato per persone dinamiche.",
+            born_year= 1,
+            kind= 'Meticcio',
+            taglia= 'media'
+        ),
+        dict(
+            name= 'Dick',
+            image= 'Dick_big.jpg',
+            description= "Dick è arrivato da poco in canile, è in fase conoscitiva necessita quindi di preadozione",
+            born_year= 1,
+            kind= 'Meticcio',
+            taglia= 'media'
+        ),
+        dict(
+            name= 'Holly',
+            image= 'Holly_big.jpg',
+            description= "Spledida esemplare, perfettamente socializzata con le persone, adatta anche ai bambini purch non troppo piccoli perch  un cane esuberante. Meglio se potr essere adottata come figlia unica, senza altri cani.",
+            born_year= 1,
+            kind= 'Amstaff',
+            taglia= 'media'
+        ),
+        dict(
+            name= 'Marton',
+            image= 'Marton_big.jpg',
+            description= "Nato nel maggio 2011, attualmente  in fase di recupero per via della sua timidezza. E pauroso ma anche molto dolce. Ambiente consigliato: Esterno ma tranquillo preferibilmente non in citt. Famiglia consigliata: Adatto a famiglie anche con bambini. Limportante che sia rispettato.",
+            born_year= 1,
+            kind= 'Incrocio nordico',
+            taglia= 'grande'
+        ),
+        dict(
+            name= 'Rodolph',
+            image= 'Rodolph_big.jpg',
+            description= "Nato nel maggio 2011, attualmente in fase di recupero per via della sua timidezza. Ha un carattere indipendente. Ambiente consigliato: Esterno ma tranquillo preferibilmente non in citt. Famiglia consigliata: Non  adatto a bambini e richiede dei compagni pazienti.",
+            born_year= 1,
+            kind= 'Incrocio nordico',
+            taglia= 'grande'
+        ),
+        dict(
+            name= 'Birbo',
+            image= 'Birbo_big.jpg',
+            description= "Dolcissimo e docilissimo adora le coccole.Vive tranquillamente sia in casa che in giardino.Adatto a tutti, anche a famiglie con bambini.",
+            born_year= 1,
+            kind= 'Meticcio',
+            taglia= 'grande'
+        ),
+        dict(
+            name= 'Leo',
+            image= 'Leo_pb_big.jpg',
+            description= "Leo a dispetto della nomea dei pitbull e dolce ed affettuoso. Ambiente consigliato: Casa, o comunque in giardino con un riparo per le giornate fredde. Adatto a persone giovani. Non deve essere adottato con lintento di utilizzarlo come cane da guardia. Si cede solo a persone consapevoli della razza e che lo sappiano gestire. No anziani e bambini piccoli.",
+            born_year= 1,
+            kind= 'Meticcio',
+            taglia= 'grande'
+        ),
+        dict(
+            name= 'Dora',
+            image= 'Dora_big.jpg',
+            description= "Molto paurosa e diffidente. Se prende confidenza con chi la segue si trasforma in dolce ed affettuosa Ambiente consigliato: Posto molto tranquillo Famiglia consigliata: Nucleo familiare ristretto, adatta soprattutto ad anziani in quanto e un cane da compagnia. Necessita di incontri conoscitivi",
+            born_year= 1,
+            kind= 'Meticcio',
+            taglia= 'media'
+        ),
+        dict(
+            name= 'Norton',
+            image= 'Norton_big.jpg',
+            description= "Norton e il tipico caso clinico dei testi di scienze comportamentali. Uno specifico protocollo di recupero e riuscito a fortificarlo per le sue innate paure nei confronti delle persone che rimangono tuttavia molto elevate. Ambiente consigliato: appartamento in luogo tranquillo. Necessita di incontri conoscitivi",
+            born_year= 1,
+            kind= 'Segugio',
+            taglia= 'media'
+        ),
+        dict(
+            name= 'Pippo',
+            image= 'Pippo_big.jpg',
+            description= "Nato il 01/12/2007. E stato recupertato ed e adottabile, ha davvero molto bisogno di coccole, unico motivo per cui rimane in canile e la sua mole. Ambiente consigliato: Giardino, per via della sua mole.",
+            born_year= 1,
+            kind= 'Incrocio pastore Asia Centrale',
+            taglia= 'gigante'
+        ),
+        dict(
+            name= 'Ali e Saba',
+            image= 'Ali_Saba_big.jpg',
+            description= "Hanno sempre vissuto insieme, adottati proprio dal nostro canile, molto tempo fa, sono stati da poco nuovamente ceduti. Ormai sono anziani ed  necessario adottarli insieme. Sono molto timidi.",
+            born_year= 1,
+            kind= 'Husky',
+            taglia= 'medio-grande'
         )];
 
         for dog in dogs:
