@@ -10,13 +10,16 @@ from .models import (
     )
 
 
-@view_config(route_name='home', renderer='templates/mytemplate.pt')
-def my_view(request):
+#DOGS
+@view_config(route_name='home', renderer='paneppaa:templates/doglist.mako')
+def home_view(request):
     try:
-        one = DBSession.query(Dog).filter(Dog.name=='Eddy').first()
+        dogs = DBSession.query(Dog).order_by('id')
     except DBAPIError:
         return Response(conn_err_msg, content_type='text/plain', status_int=500)
-    return {'name':one.name, 'project':'paneppaa'}
+
+    return {'dogs':dogs, 'project':'paneppaa'}
+
 
 #DOGS
 @view_config(route_name='dogs', renderer='paneppaa:templates/doglist.mako')
