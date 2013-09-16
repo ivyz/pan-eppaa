@@ -73,7 +73,7 @@
                                             % endfor
                                             </div>
       <%block name="footer_bar">
-      <%footer:insert_footer show_lang="0"></%footer:insert_footer>
+      <%footer:insert_footer></%footer:insert_footer>
   </%block>
     </div>
   </body>
