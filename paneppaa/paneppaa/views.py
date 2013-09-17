@@ -21,7 +21,6 @@ def home_view(request):
     return {'dogs':dogs, 'project':'paneppaa'}
 
 
-#DOGS
 @view_config(route_name='dogs', renderer='paneppaa:templates/doglist.mako')
 def dogs_view(request):
     try:
@@ -54,6 +53,10 @@ def dogs_json(request):
         plaindog = {}
         plaindog['name'] = d.name
         plaindog['description']= d.description
+        plaindog['born_year'] = d.born_year
+        plaindog['size'] = d.size
+        plaindog['kind'] = d.kind
+        plaindog['image'] = d.image
         result.append(plaindog)
 
     return {'dogs': result}
@@ -69,6 +72,24 @@ def events_view(request):
 
     return {'events':events, 'project':'paneppaa'}
 
+
+@view_config(route_name='events_json', renderer='json')
+def eventss_json(request):
+    try:
+        events = DBSession.query(Event).order_by('id')
+    except DBAPIError:
+        return dict(success=False, message="Errore")
+
+    result = []
+    for d in events:
+        plainevent = {}
+        plainevent['name'] = d.name
+        plainevent['description']= d.description
+        plainevent['date'] = d.date
+        plainevent['image'] = d.image
+        result.append(plainevent)
+
+    return {'events': result}
 
 @view_config(route_name='eventdetail', renderer='paneppaa:templates/eventdetail.mako')
 def event_view(request):
