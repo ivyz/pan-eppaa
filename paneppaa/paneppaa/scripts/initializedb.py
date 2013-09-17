@@ -125,7 +125,7 @@ def main(argv=sys.argv):
         dict(
             name= 'Leo',
             image= 'Leo_big.jpg',
-            description= "Dolcissimo e giocherellone, ha bisogno di sfogare le sue energie correndo nelle passeggiate con il suo futuro migliore amico. Pu stare sia in casa che in giardino, ma se viene tenuto in casa ha bisogno di essere stimolato altrimenti se la prenderà con i mobili. Consigliato per persone dinamiche.",
+            description= "Dolcissimo e giocherellone, ha bisogno di sfogare le sue energie correndo nelle passeggiate con il suo futuro migliore amico. Pu stare sia in casa che in giardino, ma se viene tenuto in casa ha bisogno di essere stimolato altrimenti se la prender con i mobili. Consigliato per persone dinamiche.",
             born_year= 1,
             kind= 'Meticcio',
             taglia= 'media'
@@ -133,7 +133,7 @@ def main(argv=sys.argv):
         dict(
             name= 'Dick',
             image= 'Dick_big.jpg',
-            description= "Dick è arrivato da poco in canile, è in fase conoscitiva necessita quindi di preadozione",
+            description= "Dick e arrivato da poco in canile, e in fase conoscitiva necessita quindi di preadozione",
             born_year= 1,
             kind= 'Meticcio',
             taglia= 'media'
