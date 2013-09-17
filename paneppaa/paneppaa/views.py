@@ -83,9 +83,9 @@ def eventss_json(request):
     result = []
     for d in events:
         plainevent = {}
-        plainevent['name'] = d.name
+        plainevent['title'] = d.title
         plainevent['description']= d.description
-        plainevent['date'] = d.date
+        plainevent['date'] = str(d.date)
         plainevent['image'] = d.image
         result.append(plainevent)
 
