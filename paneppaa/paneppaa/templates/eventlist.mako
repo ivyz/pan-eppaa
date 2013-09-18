@@ -14,21 +14,25 @@
     <%namespace file="footer.mako" name="footer"/>
     <%namespace file="header.mako" name="header"/>
   </head>
+
   <body>
     <div class="container">
+
       <%block name="header_bar">
       <%header:insert_header active='events'>
       ${request}
       </%header:insert_header>
       </%block>
+
       <img src="static/img/events.jpg" class="img-rounded span12" id="topimg"/>
-        <div class="container-fluid">
+        <div class="container-fluid span12">
         <h1>Eventi</h1>
 
         % for d in events:
         <div class="row">
           <div class="span8">
-            <a href="${request.route_url('events')}/${d.id}"><h3>${d.title}</h3></a>
+            <!--a href="${request.route_url('events')}/${d.id}"><h3>${d.title}</h3></a-->
+            <h3>${d.title}</h3>
           </div>
           <div class="span4 date">Quando: ${d.date}</div>
         </div>

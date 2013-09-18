@@ -16,13 +16,14 @@
   </head>
 
   <body>
+    <div class="container">
+
     <%block name="header_bar">
       <%header:insert_header active='dogs'>
       ${request}
-  </%header:insert_header>
-</%block>
+      </%header:insert_header>
+    </%block>
 
-    <div class="container">
       <section id="carousel">
         <div class="bs-docs-example">
           <div id="myCarousel" class="carousel slide">
@@ -54,6 +55,7 @@
          return descr[:105] + '...'
       %>
       </%def>
+
       <div class="row">
         % for d in dogs:
         <div class="span4 well">
@@ -67,9 +69,11 @@
         </div>
         % endfor
       </div>
-      <%block name="footer_bar">
+      </div>
+
+   <%block name="footer_bar">
       <%footer:insert_footer></%footer:insert_footer>
-  </%block>
-    </div>
+   </%block>
+
   </body>
 </html>
