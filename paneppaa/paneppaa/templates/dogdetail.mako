@@ -13,22 +13,26 @@
     <script src="${request.static_url('paneppaa:static/js/bootstrap.min.js')}"></script>
     <%namespace file="footer.mako" name="footer"/>
     <%namespace file="header.mako" name="header"/>
+
+    <%
+      staticimgurl = request.static_url('paneppaa:static/img')
+    %>
+
     <script>
-    //var staticurl = ${request.static_url('paneppaa:static/img')};
+    var staticurl = '${staticimgurl}';
     function changeImage(n)	{
-         alert(n);
-        document.getElementById('bigimage').src = staticurl;/* + '/'+ ${dog.name} + n + 'jpg';*/
+        document.getElementById('bigimage').src = staticurl + '/${dog.name}' + n + '.jpg';
     }
     </script>
 </head>
 
 <body>
+
   <%block name="header_bar">
     <%header:insert_header active='dogs'>
     ${request}
     </%header:insert_header>
   </%block>
-
 
   <div class="container">
     <h1 class="title">${dog.name}</h1>
@@ -42,7 +46,7 @@
          alt="camera" onclick="changeImage(2)"/>
     <img src="${request.static_url('paneppaa:static/img')}/${dog.name}3.jpg"
          height="90" width="120" class="img-rounded"
-         alt="camera" onclick="$('#bigimage').attr('src', $(event.target).attr('3.jpg'))"/>
+         alt="camera" onclick="changeImage(3)"/>
     <hr>
       <span>Razza: ${dog.kind}</span><br/>
       <span>Taglia: ${dog.size}</span><br/><br/>
