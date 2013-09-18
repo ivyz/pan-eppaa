@@ -2,7 +2,7 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Mon Sep 16 17:16:03 2013
+;; Created Tue Sep 17 17:20:38 2013
 ;; Desktop file format version 206
 ;; Emacs version 24.3.50.1
 
@@ -13,36 +13,80 @@
 (setq search-ring nil)
 (setq regexp-search-ring '("birbo" "foo"))
 (setq register-alist '((114 file . "/home/silvia/.emacs.d/starter-kit-registers.el") (109 file . "/home/silvia/.emacs.d/silvia") (98 file . "/home/silvia/.emacs.d/starter-kit-bindings.el") (105 file . "/home/silvia/.emacs.d/init.el")))
-(setq file-name-history '("/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/scripts/initializedb.py" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/scripts/__init__.py" "/home/silvia/Documenti/Silvia/canile/canilerovereto/footer.php" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/templates/footer.mako" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/views.py" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/__init__.py" "/home/silvia/Documenti/Silvia/canile/canilerovereto/help.php" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/templates/help.mako" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/templates/about.mako" "/home/silvia/Documenti/Silvia/canile/canilerovereto/about.php" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/templates/about.mako" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/templates/eventdetail.mako" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/templates/help.mako" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/templates/advice.mako" "/home/silvia/Documenti/Silvia/pyramid/.gitignore" "/home/silvia/Documenti/Silvia/canile/canilerovereto/index.php" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/templates/eventlist.mako" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/templates/dogdetail.mako" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/templates/mytemplate.pt" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/templates/header.mako" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/templates/footer.mako" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/templates/header.php" "/home/silvia/Documenti/Silvia/canile/canilerovereto/header.php" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/scripts/initializedb.py" "/home/silvia/Documenti/Silvia/canile/canilerovereto/index.php" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/templates/doglist.mako" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/views.py" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/templates/help.mako" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/templates/advice.mako" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/templates/about.mako"))
+(setq file-name-history '("/home/silvia/Titanium_Studio_Workspace/test/Resources/ui/doglist.js" "/home/silvia/Titanium_Studio_Workspace/test/Resources/ui/events.js" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/models.py" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/__init__.py" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/views.py" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/scripts/initializedb.py" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/scripts/__init__.py" "/home/silvia/Documenti/Silvia/canile/canilerovereto/footer.php" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/templates/footer.mako" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/views.py" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/__init__.py" "/home/silvia/Documenti/Silvia/canile/canilerovereto/help.php" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/templates/help.mako" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/templates/about.mako" "/home/silvia/Documenti/Silvia/canile/canilerovereto/about.php" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/templates/about.mako" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/templates/eventdetail.mako" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/templates/help.mako" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/templates/advice.mako" "/home/silvia/Documenti/Silvia/pyramid/.gitignore" "/home/silvia/Documenti/Silvia/canile/canilerovereto/index.php" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/templates/eventlist.mako" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/templates/dogdetail.mako" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/templates/mytemplate.pt" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/templates/header.mako" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/templates/footer.mako" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/templates/header.php" "/home/silvia/Documenti/Silvia/canile/canilerovereto/header.php" "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/scripts/initializedb.py" "/home/silvia/Documenti/Silvia/canile/canilerovereto/index.php"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "/home/silvia/Titanium_Studio_Workspace/test/Resources/ui/events.js"
+  "events.js"
+  'js-mode
+  '(auto-fill-mode yas-minor-mode flymake-mode auto-complete-mode subword-mode whitespace-mode egg-minor-mode moz-minor-mode rainbow-mode)
+  1399
+  '(1394 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (column-number-mode . t)))
+
+(desktop-create-buffer 206
+  "/home/silvia/Titanium_Studio_Workspace/test/Resources/ui/doglist.js"
+  "doglist.js"
+  'js-mode
+  '(auto-fill-mode yas-minor-mode flymake-mode auto-complete-mode subword-mode whitespace-mode egg-minor-mode moz-minor-mode rainbow-mode)
+  381
+  '(314 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (column-number-mode . t)))
+
+(desktop-create-buffer 206
+  "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/__init__.py"
+  "__init__.py"
+  'python-mode
+  '(auto-fill-mode yas-minor-mode flymake-mode auto-complete-mode subword-mode whitespace-mode egg-minor-mode)
+  909
+  '(634 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (column-number-mode . t)))
+
+(desktop-create-buffer 206
+  "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/views.py"
+  "views.py"
+  'python-mode
+  '(auto-fill-mode yas-minor-mode flymake-mode auto-complete-mode subword-mode whitespace-mode egg-minor-mode)
+  2265
+  '(2347 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (column-number-mode . t)))
+
+(desktop-create-buffer 206
+  "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/models.py"
+  "models.py"
+  'python-mode
+  '(auto-fill-mode yas-minor-mode flymake-mode auto-complete-mode subword-mode whitespace-mode egg-minor-mode)
+  1088
+  '(877 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (column-number-mode . t)))
+
 (desktop-create-buffer 206
   "/home/silvia/Documenti/Silvia/canile/canilerovereto/footer.php"
   "footer.php"
   'fundamental-mode
   '(yas-minor-mode egg-minor-mode)
-  139
+  150
   '(10 nil)
   nil
   nil
   '((buffer-file-coding-system . undecided-unix)))
 
 (desktop-create-buffer 206
-  "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/scripts/initializedb.py"
-  "initializedb.py"
-  'python-mode
-  '(auto-fill-mode yas-minor-mode flymake-mode auto-complete-mode subword-mode whitespace-mode egg-minor-mode)
-  9617
-  '(9245 nil)
-  nil
-  nil
-  '((indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (column-number-mode . t) (overwrite-mode)))
-
-(desktop-create-buffer 206
   "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/templates/eventdetail.mako"
   "eventdetail.mako"
   'html-mode
-  '(auto-fill-mode yas-minor-mode subword-mode whitespace-mode flyspell-mode egg-minor-mode)
+  '(auto-fill-mode yas-minor-mode subword-mode whitespace-mode egg-minor-mode flyspell-mode)
   1453
   '(1781 nil)
   nil
@@ -53,7 +97,7 @@
   "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/templates/dogdetail.mako"
   "dogdetail.mako"
   'html-mode
-  '(auto-fill-mode yas-minor-mode subword-mode whitespace-mode flyspell-mode egg-minor-mode)
+  '(auto-fill-mode yas-minor-mode subword-mode whitespace-mode egg-minor-mode flyspell-mode)
   1835
   '(1835 nil)
   nil
@@ -64,7 +108,7 @@
   "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/templates/about.mako"
   "about.mako"
   'html-mode
-  '(auto-fill-mode yas-minor-mode subword-mode whitespace-mode flyspell-mode egg-minor-mode)
+  '(auto-fill-mode yas-minor-mode subword-mode whitespace-mode egg-minor-mode flyspell-mode)
   5046
   '(5046 nil)
   nil
@@ -75,7 +119,7 @@
   "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/templates/help.mako"
   "help.mako"
   'html-mode
-  '(auto-fill-mode yas-minor-mode subword-mode whitespace-mode flyspell-mode egg-minor-mode)
+  '(auto-fill-mode yas-minor-mode subword-mode whitespace-mode egg-minor-mode flyspell-mode)
   3495
   '(3495 nil)
   nil
@@ -86,7 +130,7 @@
   "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/templates/eventlist.mako"
   "eventlist.mako"
   'html-mode
-  '(auto-fill-mode yas-minor-mode subword-mode whitespace-mode flyspell-mode egg-minor-mode)
+  '(auto-fill-mode yas-minor-mode subword-mode whitespace-mode egg-minor-mode flyspell-mode)
   1879
   '(1879 nil)
   nil
@@ -97,7 +141,7 @@
   "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/templates/doglist.mako"
   "doglist.mako"
   'html-mode
-  '(auto-fill-mode yas-minor-mode subword-mode whitespace-mode flyspell-mode egg-minor-mode)
+  '(auto-fill-mode yas-minor-mode subword-mode whitespace-mode egg-minor-mode flyspell-mode)
   3435
   '(3435 nil)
   nil
@@ -119,7 +163,7 @@
   "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/templates/advice.mako"
   "advice.mako"
   'html-mode
-  '(auto-fill-mode yas-minor-mode subword-mode whitespace-mode flyspell-mode egg-minor-mode)
+  '(auto-fill-mode yas-minor-mode subword-mode whitespace-mode egg-minor-mode flyspell-mode)
   7667
   '(7667 nil)
   nil
@@ -127,32 +171,10 @@
   '((buffer-file-coding-system . utf-8-unix) (column-number-mode . t)))
 
 (desktop-create-buffer 206
-  "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/__init__.py"
-  "__init__.py"
-  'python-mode
-  '(auto-fill-mode yas-minor-mode flymake-mode auto-complete-mode subword-mode whitespace-mode egg-minor-mode)
-  451
-  '(447 nil)
-  nil
-  nil
-  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (column-number-mode . t)))
-
-(desktop-create-buffer 206
-  "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/views.py"
-  "views.py"
-  'python-mode
-  '(auto-fill-mode yas-minor-mode flymake-mode auto-complete-mode subword-mode whitespace-mode egg-minor-mode)
-  1145
-  '(180 nil)
-  nil
-  nil
-  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (column-number-mode . t)))
-
-(desktop-create-buffer 206
   "/home/silvia/Documenti/Silvia/canile/canilerovereto/help.php"
   "help.php"
   'html-mode
-  '(auto-fill-mode yas-minor-mode subword-mode whitespace-mode flyspell-mode egg-minor-mode)
+  '(auto-fill-mode yas-minor-mode subword-mode whitespace-mode egg-minor-mode flyspell-mode)
   3787
   '(1746 nil)
   nil
@@ -163,7 +185,7 @@
   "/home/silvia/Documenti/Silvia/canile/canilerovereto/about.php"
   "about.php"
   'html-mode
-  '(auto-fill-mode yas-minor-mode subword-mode whitespace-mode flyspell-mode egg-minor-mode)
+  '(auto-fill-mode yas-minor-mode subword-mode whitespace-mode egg-minor-mode flyspell-mode)
   2222
   '(1646 nil)
   nil
@@ -174,7 +196,7 @@
   "/home/silvia/Documenti/Silvia/pyramid/paneppaa/paneppaa/templates/mytemplate.pt"
   "mytemplate.pt"
   'nxml-mode
-  '(auto-fill-mode yas-minor-mode flyspell-mode egg-minor-mode)
+  '(auto-fill-mode yas-minor-mode egg-minor-mode flyspell-mode)
   1135
   '(1136 nil)
   nil
