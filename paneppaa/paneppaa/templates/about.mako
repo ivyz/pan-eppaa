@@ -22,7 +22,7 @@
     </%header:insert_header>
     </%block>
 
-    <img src="static/img/fiori.jpg" class="img-rounded" id="topimg"/>
+    <img src="static/img/fiori.jpg" class="img-rounded span12" id="topimg"/>
      <div id="middle">
       <div class="middle align-center">
         <div class="span10">
