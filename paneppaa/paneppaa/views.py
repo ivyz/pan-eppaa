@@ -38,7 +38,7 @@ def dog_view(request):
     except DBAPIError:
         return Response(conn_err_msg, content_type='text/plain', status_int=500)
 
-    return {'dog':dog}
+    return {'dog':dog, 'project':'paneppaa'}
 
 
 @view_config(route_name='dogs_json', renderer='json')

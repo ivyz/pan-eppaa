@@ -13,36 +13,47 @@
     <script src="${request.static_url('paneppaa:static/js/bootstrap.min.js')}"></script>
     <%namespace file="footer.mako" name="footer"/>
     <%namespace file="header.mako" name="header"/>
+    <script type="text/javascript">
+
+    function changeImage(image)	{
+      alert(image);
+      $('#bigimg').attr('src', 'pippo');
+    }
+    </script>
 </head>
 
 <body>
-    <%block name="header_bar">
-      <%header:insert_header active='dogs'>
-      ${request}
-  </%header:insert_header>
-</%block>
+  <%block name="header_bar">
+    <%header:insert_header active='dogs'>
+    ${request}
+    </%header:insert_header>
+  </%block>
+
 
   <div class="container">
-    <div id="middle">
-      <div class="middle align-center">
-        <p class="app-welcome">
-          <span class="app-name">${dog.name}</span>
-        </p>
-      </div>
-    </div>
-    <div id="bottom">
-      <div class="bottom">
-            <span>Nome: ${dog.name}</span><br/>
-            <span>Descrizione: ${dog.description}</span><br/>
-            <span>Razza: ${dog.kind}</span><br/>
-            <span>Taglia: ${dog.size}</span><br/><br/>
-
+    <h1 class="title">${dog.name}</h1>
+    <img id="bigimage" src="${request.static_url('paneppaa:static/img')}/${dog.name}1.jpg"
+         height="270" width="360" alt="camera"  class="img-rounded"/>
+    <img src="${request.static_url('paneppaa:static/img')}/${dog.name}1.jpg"
+         height="90" width="120"  class="img-rounded"
+         alt="camera" onclick="changeImage(1)"/>
+    <img src="${request.static_url('paneppaa:static/img')}/${dog.name}2.jpg"
+         height="90" width="120" class="img-rounded"
+         alt="camera" onclick="changeImage(2)"/>
+    <img src="${request.static_url('paneppaa:static/img')}/${dog.name}3.jpg"
+         height="90" width="120" class="img-rounded"
+         alt="camera" onclick="changeImage(3)"/>
+    <hr>
+      <span>Razza: ${dog.kind}</span><br/>
+      <span>Taglia: ${dog.size}</span><br/><br/>
+      <div>${dog.description}</div><br/>
       </div>
     </div>
   </div>
-      <%block name="footer_bar">
-      <%footer:insert_footer></%footer:insert_footer>
+
+  <%block name="footer_bar">
+    <%footer:insert_footer></%footer:insert_footer>
   </%block>
 
-</body>
+  </body>
 </html>

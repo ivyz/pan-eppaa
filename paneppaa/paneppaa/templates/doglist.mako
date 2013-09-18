@@ -51,7 +51,7 @@
 
       <%def name="truncateDescription(descr)">
       <%
-         return descr[:110] + '...'
+         return descr[:105] + '...'
       %>
       </%def>
       <div class="row">
