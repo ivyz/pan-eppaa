@@ -65,13 +65,8 @@
             <a class="btn btn-success" href="${request.route_url('dogs')}/${d.id}">Conoscimi  &raquo;</a>
           </p>
         </div>
-        <!--a href="${request.route_url('dogs')}/${d.id}"><span>Nome: ${d.name}</span></a>
-      <span>Nome: ${d.name}</span><br/>
-      <span>Descrizione: ${d.description}</span><br/>
-      <span>Razza: ${d.kind}</span><br/>
-      <span>Taglia: ${d.size}</span><br/><br/-->
-                                            % endfor
-                                            </div>
+        % endfor
+      </div>
       <%block name="footer_bar">
       <%footer:insert_footer></%footer:insert_footer>
   </%block>

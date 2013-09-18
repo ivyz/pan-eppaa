@@ -13,11 +13,11 @@
     <script src="${request.static_url('paneppaa:static/js/bootstrap.min.js')}"></script>
     <%namespace file="footer.mako" name="footer"/>
     <%namespace file="header.mako" name="header"/>
-    <script type="text/javascript">
-
-    function changeImage(image)	{
-      alert(image);
-      $('#bigimg').attr('src', 'pippo');
+    <script>
+    //var staticurl = ${request.static_url('paneppaa:static/img')};
+    function changeImage(n)	{
+         alert(n);
+        document.getElementById('bigimage').src = staticurl;/* + '/'+ ${dog.name} + n + 'jpg';*/
     }
     </script>
 </head>
@@ -42,7 +42,7 @@
          alt="camera" onclick="changeImage(2)"/>
     <img src="${request.static_url('paneppaa:static/img')}/${dog.name}3.jpg"
          height="90" width="120" class="img-rounded"
-         alt="camera" onclick="changeImage(3)"/>
+         alt="camera" onclick="$('#bigimage').attr('src', $(event.target).attr('3.jpg'))"/>
     <hr>
       <span>Razza: ${dog.kind}</span><br/>
       <span>Taglia: ${dog.size}</span><br/><br/>
