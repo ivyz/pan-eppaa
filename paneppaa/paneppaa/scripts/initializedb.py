@@ -1,3 +1,5 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
 import os
 import sys
 import transaction
@@ -37,176 +39,176 @@ def main(argv=sys.argv):
         dogs = [dict(
             name = 'Terry',
             image = 'Terry_big.jpg',
-            description = "Cane buonissimo, ha estremo bisogno di coccole, tira un po al guinzaglio ma siamo sicuri che si abituer&agrave; se avr la possibilit&agrave; di sfogare le sue energie.",
-            born_year = 3,
+            description = u'Cane buonissimo, ha estremo bisogno di coccole, tira un po al guinzaglio ma siamo sicuri che si abituerà se avrà la possibilità di sfogare le sue energie in passeggiate giornaliere. E\' senza dubbio un cane esuberante ma affettuoso, non è adatto a bambini ed anziani proprio per la sua esuberanza.',
+            born_year = 2008,
             taglia =  'medio-grande',
             kind = 'Labrador'
         ),
         dict(
             name= 'Balto',
             image= 'Balto_big.jpg',
-            description= "Il bellissimo Balto, ma anche molto diffidente, ha bisogno di incontri conoscitivi.",
-            born_year= 4,
+            description= u'Il bellissimo Balto, ha bisogno di incontri conoscitivi in quanto si trova da molto tempo al canile. E\' molto giocherellone, affettuoso ed ha bisogno di stimoli nel gioco e nell\'approcio con le persone. E\' molto possessivo sia con gli oggetti che con il cibo. Il suo ambiente ideale è il giardino in un posto tranquillo, lontano dai centri abitati. E\' adatto a persone che amano le camminate e che lo facciano sfogare. Cane non adatto a bambini ed anziani.',
+            born_year= 2007,
             kind= 'Meticcio',
             taglia= 'media'
         ),
         dict(
-            name= 'Bal',
+            name= u'Balù',
             image= 'Balu_big.jpg',
-            description= "Taglia quasi gigante, il nostr Bal da molto tempo al canile,  possessivo con il cibo e con i suoi giochi. Necessita di incontri conoscitivi.",
-            born_year= 8,
+            description= u'Taglia quasi gigante, il nostro Balù è da molto tempo al canile, possessivo con il cibo e con i suoi giochi (guai a chi tocca il suo Pluto!). Necessita di incontri conoscitivi. Va tenuto al calduccio perché ormai ha la sua bell\'età. Non adatto a bambini ed anziani per via della sua mole.',
+            born_year= 2006,
             kind= 'Labrador',
             taglia= 'grande'
         ),
         dict(
             name= 'Alba',
             image= 'Alba_big.jpg',
-            description= "La spaventatissima Alba ha bisogno di un compagno paziente del quale potersi fidare, lambiente ideale un posto tranquillo lontano dai rumori della citt",
-            born_year= 4,
+            description= u'La spaventatissima Alba ha bisogno di un compagno paziente del quale potersi fidare, che sia disposto a degli incontri conoscitivi. La sua casa ideale è un posto tranquillo lontano dai rumori della città. E\' adatta a famiglie non numerose.',
+            born_year= 2008,
             kind= 'Incrocio labrador',
             taglia= 'medio-grande'
         ),
         dict(
             name= 'Feo',
             image= 'Feo_big.jpg',
-            description= "Feo  attualmente in fase di recupero perch non socializza bene con tutte le persone",
-            born_year= 8,
+            description= u'Feo è attualmente in fase di recupero perchè non socializza bene con tutte le persone, probabilmente è stato poco o mal socializzato ed anche il canile ha influito sul suo umore.',
+            born_year= 2005,
             kind= 'San Bernardo',
             taglia= 'gigante'
         ),
         dict(
             name= 'Spina',
             image= 'Spina_big.jpg',
-            description= "Piccola spina, ti fiderai mai di qualcuno Se qualcuno  molto paziente da rispettare le tue paure forse si...",
-            born_year= 7,
+            description= u'Piccola spina, ti fiderai mai di qualcuno? Se qualcuno sarà abbastanza paziente da rispettare i tuoi tempi e calmare le tue paure forse si... E\' molto buona e ben socializzata con i suoi simili ma rifugge il contatto con le persone.',
+            born_year= 2005,
             kind= 'Incrocio spinone',
             taglia= 'medio-piccola'
         ),
         dict(
             name= 'Stuard',
             image= 'Stuard_big.jpg',
-            description= "Stuard  un po la mascotte del canile, attualmente  il pi vecchio, ma anche il pi coccolone. Leggermente ipovedente, non va forzato troppo nelle passeggiate.",
-            born_year= 10,
+            description= u'Stuard è un po\' la mascotte del canile, attualmente  il più vecchio, ma anche il più; coccolone. Leggermente ipovedente, attenzione che non scambi il dito con un biscotto! Non va forzato troppo nelle passeggiate e va tenuto al calduccio, l\'appartamento è il suo ambiente naturale!',
+            born_year= 2004,
             kind= 'Meticcio',
             taglia= 'medio-grande'
         ),
         dict(
             name= 'Black',
             image= 'Black_big.jpg',
-            description= "Black  dolcissimo con chi conosce, e diffidente con chi non conosce. Necessita di incontri conoscitivi",
-            born_year= 6,
+            description= u'Black è dolcissimo con chi conosce, e diffidente con chi non conosce. Necessita di incontri conoscitivi e deve essere trattato con rispetto. E\' un ottimo cane da appartamento, non adatto a bambini e anziani.',
+            born_year= 2006,
             kind= 'Meticcio',
             taglia= 'media'
         ),
         dict(
             name= 'Bonnie',
             image= 'Bonnie_big.jpg',
-            description= "A dispetto della nomea del Pitbull  dolcissima e coccolosissima. Cediamo solo a persone consapevoli della razza.",
-            born_year= 35,
+            description= u'A dispetto della nomea del Pitbull è dolcissima e coccolosissima. Adatta a persone giovani. Non deve essere adottata con l\'intento di utilizzarla come cane da guardia. Si cede solo a persone consapevoli della razza e che la sappiano gestire. Non adatta ad anziani e bambini piccoli. Per il suo pelo raso va tenuta al riparo in inverno.',
+            born_year= 2006,
             kind= 'Pitbull',
             taglia= 'media'
         ),
         dict(
             name= 'Eddy',
             image= 'Eddy_big.jpg',
-            description= "Bellissimo Eddy ma molto attaccato al canile perch arriva da una brutta situazione. Necessita quindi di incontri conoscitivi per potersi adattare bene nella sua nuova casa. Necessita quindi di incontri conoscitivi per potersi adattare bene nella sua nuova casa. Necessita quindi di incontri conoscitivi per potersi adattare bene nella sua nuova casa.",
-            born_year= 1,
+            description= u'Bellissimo Eddy ma molto attaccato al canile perchè arriva da una brutta situazione. Necessita quindi di incontri conoscitivi per potersi adattare bene nella sua nuova casa. Ha un carattere vivace, esuberante ed emotivo. Deve essere saputo gestire quindi sconsigliamo bambini ed anziani anche per la sua mole. Il suo pelo folto gli permette di vivere tranquillamente in giardino. Ottimo per chi adora le passeggiate in montagna.',
+            born_year= 2011,
             kind= 'Incrocio da pastore',
             taglia= 'grande'
         ),
         dict(
             name= 'Luna',
             image= 'Luna_big.jpg',
-            description= "Nata nel 2007. Timida, riservata, rifugge il contatto con gli uomini, ma e perfettamente socializzata con i suoi conspecifici. E stata recuperata e  quindi adottabile. Famiglia consigliata: Nucleo familiare di pochi componenti, anche con bambini.",
-            born_year= 1,
+            description= u'Nata nel 2007. Timida, riservata, rifugge il contatto con gli uomini, ma e perfettamente socializzata con i suoi conspecifici. E\' stata recuperata ed è quindi adottabile. Famiglia consigliata: Nucleo familiare di pochi componenti, anche con bambini e con tanta pazienza per venire a conoscerla rispettando i suoi tempi.',
+            born_year= 2007,
             kind= 'Meticcio',
             taglia= 'medio-piccola'
         ),
         dict(
             name= 'Leo',
             image= 'Leo_big.jpg',
-            description= "Dolcissimo e giocherellone, ha bisogno di sfogare le sue energie correndo nelle passeggiate con il suo futuro migliore amico. Pu stare sia in casa che in giardino, ma se viene tenuto in casa ha bisogno di essere stimolato altrimenti se la prender con i mobili. Consigliato per persone dinamiche.",
-            born_year= 1,
+            description= u'Dolcissimo e giocherellone, ha bisogno di sfogare le sue energie correndo nelle passeggiate con il suo futuro migliore amico. Può stare sia in casa che in giardino, ma se viene tenuto in casa ha bisogno di essere stimolato altrimenti se la prenderà con i mobili. Consigliato per persone dinamiche.',
+            born_year= 2009,
             kind= 'Meticcio',
             taglia= 'media'
         ),
         dict(
             name= 'Dick',
             image= 'Dick_big.jpg',
-            description= "Dick e arrivato da poco in canile, e in fase conoscitiva necessita quindi di preadozione",
-            born_year= 1,
+            description= u'Dick è arrivato da poco in canile, ed è in fase conoscitiva necessita quindi di preadozione.',
+            born_year= 2010,
             kind= 'Meticcio',
             taglia= 'media'
         ),
         dict(
             name= 'Holly',
             image= 'Holly_big.jpg',
-            description= "Spledida esemplare, perfettamente socializzata con le persone, adatta anche ai bambini purch non troppo piccoli perch  un cane esuberante. Meglio se potr essere adottata come figlia unica, senza altri cani.",
-            born_year= 1,
+            description= u'Spledida esemplare, perfettamente socializzata con le persone, adatta anche ai bambini purchè non troppo piccoli perchè un cane esuberante. Meglio se potrà essere adottata come figlia unica, senza altri cani. Non ama infatti il contatto con i suoi conspecifici. Il canile non è il posto più adatto a lei, infatti è spesso agitata.',
+            born_year= 2011,
             kind= 'Amstaff',
             taglia= 'media'
         ),
         dict(
             name= 'Marton',
             image= 'Marton_big.jpg',
-            description= "Nato nel maggio 2011, attualmente  in fase di recupero per via della sua timidezza. E pauroso ma anche molto dolce. Ambiente consigliato: Esterno ma tranquillo preferibilmente non in citt. Famiglia consigliata: Adatto a famiglie anche con bambini. Limportante che sia rispettato.",
-            born_year= 1,
+            description= u'Nato nel maggio 2011, attualmente in fase di recupero per via della sua timidezza. E\' pauroso ma anche molto dolce come il fratello Rodolph. Ambiente consigliato: Esterno ma tranquillo preferibilmente non in città. Famiglia consigliata: Adatto a famiglie anche con bambini. L\'importante è che sia rispettato. Necessaria la preadozione.',
+            born_year= 2011,
             kind= 'Incrocio nordico',
             taglia= 'grande'
         ),
         dict(
             name= 'Rodolph',
             image= 'Rodolph_big.jpg',
-            description= "Nato nel maggio 2011, attualmente in fase di recupero per via della sua timidezza. Ha un carattere indipendente. Ambiente consigliato: Esterno ma tranquillo preferibilmente non in citt. Famiglia consigliata: Non  adatto a bambini e richiede dei compagni pazienti.",
-            born_year= 1,
+            description= u'Nato nel maggio 2011 è il fratello di Rodolph, attualmente in fase di recupero per via della sua timidezza. Ha un carattere indipendente. Ambiente consigliato: Esterno ma tranquillo preferibilmente non in città. Famiglia consigliata: Non  adatto a bambini e richiede dei compagni pazienti che rispettino i suoi tempi. Ideale la preadozione.',
+            born_year= 2011,
             kind= 'Incrocio nordico',
             taglia= 'grande'
         ),
         dict(
             name= 'Birbo',
             image= 'Birbo_big.jpg',
-            description= "Dolcissimo e docilissimo adora le coccole.Vive tranquillamente sia in casa che in giardino.Adatto a tutti, anche a famiglie con bambini.",
-            born_year= 1,
+            description= u'Dolcissimo e docilissimo adora le coccole. Vive tranquillamente sia in casa che in giardino. E\' veramente un cane adatto a tutti, anche a famiglie con bambini. D\'altra parte i suoi occhioni dolci dicono già tutto.',
+            born_year= 2010,
             kind= 'Meticcio',
             taglia= 'grande'
         ),
         dict(
-            name= 'Leo',
+            name= 'Leo ',
             image= 'Leo_pb_big.jpg',
-            description= "Leo a dispetto della nomea dei pitbull e dolce ed affettuoso. Ambiente consigliato: Casa, o comunque in giardino con un riparo per le giornate fredde. Adatto a persone giovani. Non deve essere adottato con lintento di utilizzarlo come cane da guardia. Si cede solo a persone consapevoli della razza e che lo sappiano gestire. No anziani e bambini piccoli.",
-            born_year= 1,
-            kind= 'Meticcio',
-            taglia= 'grande'
+            description= u'Leo a dispetto della nomea dei pitbull è dolce ed affettuoso. Ambiente consigliato: Casa, o comunque in giardino con un riparo per le giornate fredde per via del pelo raso. Adatto a persone giovani. Non deve essere adottato con l\'intento di utilizzarlo come cane da guardia. Si cede solo a persone consapevoli della razza e che lo sappiano gestire. No anziani e bambini piccoli.',
+            born_year= 2009,
+            kind= 'Pitbull',
+            taglia= 'medio'
         ),
         dict(
             name= 'Dora',
             image= 'Dora_big.jpg',
-            description= "Molto paurosa e diffidente. Se prende confidenza con chi la segue si trasforma in dolce ed affettuosa Ambiente consigliato: Posto molto tranquillo Famiglia consigliata: Nucleo familiare ristretto, adatta soprattutto ad anziani in quanto e un cane da compagnia. Necessita di incontri conoscitivi",
-            born_year= 1,
+            description= u'Molto paurosa e diffidente. Se prende confidenza con chi la segue si trasforma in dolce ed affettuosa Ambiente consigliato: Posto molto tranquillo e al calduccio. Famiglia consigliata: Nucleo familiare ristretto, adatta soprattutto ad anziani in quanto è un perfetto cane da compagnia. Necessita di incontri conoscitivi per via della sua diffidenza.',
+            born_year= 2005,
             kind= 'Meticcio',
             taglia= 'media'
         ),
         dict(
             name= 'Norton',
             image= 'Norton_big.jpg',
-            description= "Norton e il tipico caso clinico dei testi di scienze comportamentali. Uno specifico protocollo di recupero e riuscito a fortificarlo per le sue innate paure nei confronti delle persone che rimangono tuttavia molto elevate. Ambiente consigliato: appartamento in luogo tranquillo. Necessita di incontri conoscitivi",
-            born_year= 1,
+            description= u'Norton e il tipico caso clinico dei testi di scienze comportamentali. Uno specifico protocollo di recupero è riuscito a fortificarlo per le sue innate paure nei confronti delle persone che rimangono tuttavia molto elevate. Ambiente consigliato: appartamento in luogo tranquillo. Necessita di incontri conoscitivi. E\' ben accetta l\'adozione a distanza e stiamo lavorando per il recupero completo.',
+            born_year= 2006,
             kind= 'Segugio',
             taglia= 'media'
         ),
         dict(
             name= 'Pippo',
             image= 'Pippo_big.jpg',
-            description= "Nato il 01/12/2007. E stato recupertato ed e adottabile, ha davvero molto bisogno di coccole, unico motivo per cui rimane in canile e la sua mole. Ambiente consigliato: Giardino, per via della sua mole.",
-            born_year= 1,
+            description= u'Nato il 01/12/2007. E\' stato recupertato ed è quindi adottabile, ha davvero molto bisogno di coccole, l\'unico motivo per cui rimane in canile è la sua mole. Basta guardarlo negli occhi per capire che chiede solo un po\' di amore e pazienza. Il carattere indipendente è quello tipico del pastore dell\'Asia Centrale. Ambiente consigliato: Giardino, per via della sua mole.',
+            born_year= 2007,
             kind= 'Incrocio pastore Asia Centrale',
             taglia= 'gigante'
         ),
         dict(
             name= 'Ali e Saba',
             image= 'Ali_Saba_big.jpg',
-            description= "Hanno sempre vissuto insieme, adottati proprio dal nostro canile, molto tempo fa, sono stati da poco nuovamente ceduti. Ormai sono anziani ed  necessario adottarli insieme. Sono molto timidi.",
-            born_year= 1,
+            description= u'Hanno sempre vissuto insieme, adottati proprio dal nostro canile, molto tempo fa, sono stati da poco nuovamente ceduti. Ormai sono anziani ed  necessario adottarli insieme. Sono molto timidi e necessitano di incontri conoscitivi. Sarebbero degli ottimi cani da appartamento e da compagnia per anziani.',
+            born_year= 200,
             kind= 'Husky',
             taglia= 'medio-grande'
         )];
@@ -220,18 +222,13 @@ def main(argv=sys.argv):
     with transaction.manager:
         events = [dict(
             title = 'Paes dei presepi',
-            description = "Cane buonissimo, ha estremo bisogno di coccole, tira un po al guinzaglio ma siamo sicuri che si abituer se avr la possibilit di sfogare le sue energie.",
+            description = u'Abbiamo partecipato al mercatino natalizio di Baselga di Pinè; organizzato dall\'APT nel ‘Paés dei Presepi’. Gli articoli messi in vendita sono stati realizzati dai volontari del canile.<br/> Gli stessi volontari hanno messo a disposizione il proprio tempo per partecipare alla vendita degli oggetti. Abbiamo partecipato al mercatino per 3 giornate in un\'atmosfera degna del Natale. Abbiamo incontrato molte persone buone e motivate che hanno fatto un\'offerta per i nostri cagnolini.<br/> Ci siamo confrontati con i volontari di altri canili che cia hanno dato idee per nuove iniziative! <br/> Con il ricavato abbiamo comperatoe dei guinzagli e delle pettorine di cui abbiamo molto bisogno.<br/><br/> <b>Grazie</b> a tutti quelli che hanno partecipato, alle persone che hanno fatto un\'offerta, e a coloro che ci hanno portato coperte, maglioni ecc...',
             date = date(2012, 12, 25)
         ),
         dict(
             title = 'Mercatino',
-            description = "Cane buonissimo, ha estremo bisogno di coccole, tira un po al guinzaglio ma siamo sicuri che si abituer se avr la possibilit di sfogare le sue energie.",
+            description = u'Abbiamo partecipato e parteciperemo anche in futuro al mercatino dell\'usato che si tiene in centro a Rovereto tutti i primi martedì; del mese. Come per altre iniziative gli oggetti in vendita sono stati forniti o creati dagli stessi volontari che hanno poi permesso, grazie al loro tempo, di effettuare uno stand nel mercatino.',
             date = date(2013, 7, 8)
-        ),
-        dict(
-            title = 'Porte aperte',
-            description = "Cane buonissimo, ha estremo bisogno di coccole, tira un po al guinzaglio ma siamo sicuri che si abituer se avr la possibilit di sfogare le sue energie.",
-            date = date(2013, 10, 6)
         )];
 
         for evt in events:
