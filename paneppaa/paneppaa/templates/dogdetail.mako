@@ -23,7 +23,6 @@
 </%block>
 
   <div class="container">
-
     <div id="middle">
       <div class="middle align-center">
         <p class="app-welcome">

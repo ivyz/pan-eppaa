@@ -21,7 +21,7 @@
       ${request}
       </%header:insert_header>
       </%block>
-      <img src="img/events.jpg" class="img-rounded"/>
+      <img src="static/img/events.jpg" class="img-rounded" id="topimg"/>
         <div class="container-fluid">
         <h1>Eventi</h1>
 

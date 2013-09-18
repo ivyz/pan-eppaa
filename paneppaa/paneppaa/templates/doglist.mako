@@ -38,8 +38,8 @@
               <div class="item">
                 <img src="${request.static_url('paneppaa:static/img/sfondo2.jpg')}" alt=""/>
                 <div class="carousel-caption">
-                  <h4>Second Thumbnail label</h4>
-                  <p>Label here....</p>
+                  <h4>Foto d'autore</h4>
+                  <p>Alcuni primi piani ben riusciti</p>
                 </div>
               </div>
             </div>

@@ -15,14 +15,14 @@
     <%namespace file="header.mako" name="header"/>
 </head>
 <body>
-  <%block name="header_bar">
+  <div class="container">
+    <%block name="header_bar">
       <%header:insert_header active='about'>
       ${request}
-  </%header:insert_header>
-</%block>
+    </%header:insert_header>
+    </%block>
 
-  <div class="container">
-    <img src="static/img/fiori.jpg" class="img-rounded"/>
+    <img src="static/img/fiori.jpg" class="img-rounded" id="topimg"/>
      <div id="middle">
       <div class="middle align-center">
         <div class="span10">
