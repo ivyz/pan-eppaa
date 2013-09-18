@@ -26,7 +26,7 @@
   <img src="static/img/fiori.jpg" class="img-rounded span12" id="topimg"/>
   <div id="middle">
     <div class="middle align-center">
-      <div class="span10">
+      <div class="span12">
         <div class="well well-large well-green margin">
 
           <b>CONSIGLI PER I NUOVI PROPRIETARI</b><br/>

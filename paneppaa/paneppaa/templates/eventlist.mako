@@ -27,7 +27,7 @@
 
         % for d in events:
         <div class="row">
-          <div class="span7">
+          <div class="span8">
             <a href="${request.route_url('events')}/${d.id}"><h3>${d.title}</h3></a>
           </div>
           <div class="span4 date">Quando: ${d.date}</div>
@@ -36,7 +36,7 @@
           <div class="span3">
             <img src="img/mercatino1.jpg" class="img-rounded"/>
           </div>
-          <div class="span7">
+          <div class="span9">
             <br/>Descrizione: ${d.description}
           </div>
         </div>
