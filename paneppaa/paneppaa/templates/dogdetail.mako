@@ -16,7 +16,7 @@
 
     <%
       staticimgurl = request.static_url('paneppaa:static/img')
-      dogname = dog.name;
+      dogname = dog.name.lower();
     %>
 
     <script>
@@ -40,15 +40,15 @@
 
   <div class="container">
     <h1 class="title">${dog.name}</h1>
-    <img id="bigimage" src="${request.static_url('paneppaa:static/img')}/${dog.name}1.jpg"
+    <img id="bigimage" src="${request.static_url('paneppaa:static/img')}/${dogname}1.jpg"
          height="270" width="360" alt="camera"  class="img-rounded"/>
-    <img src="${request.static_url('paneppaa:static/img')}/${dog.name}1.jpg"
+    <img src="${request.static_url('paneppaa:static/img')}/${dogname}1.jpg"
          height="90" width="120"  class="img-rounded"
          alt="camera" onclick="changeImage(1)"/>
-    <img src="${request.static_url('paneppaa:static/img')}/${dog.name}2.jpg"
+    <img src="${request.static_url('paneppaa:static/img')}/${dogname}2.jpg"
          height="90" width="120" class="img-rounded"
          alt="camera" onclick="changeImage(2)"/>
-    <img src="${request.static_url('paneppaa:static/img')}/${dog.name}3.jpg"
+    <img src="${request.static_url('paneppaa:static/img')}/${dogname}3.jpg"
          height="90" width="120" class="img-rounded"
          alt="camera" onclick="changeImage(3)"/>
     <hr>
