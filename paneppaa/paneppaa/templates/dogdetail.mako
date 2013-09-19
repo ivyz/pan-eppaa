@@ -16,12 +16,16 @@
 
     <%
       staticimgurl = request.static_url('paneppaa:static/img')
+      dogname = dog.name;
     %>
 
     <script>
     var staticurl = '${staticimgurl}';
-    function changeImage(n)	{
-        document.getElementById('bigimage').src = staticurl + '/${dog.name}' + n + '.jpg';
+    var dogn = '${dogname}';
+    function changeImage(n) {
+
+        document.getElementById('bigimage').src = staticurl + '/' +
+                                 dogn.toLowerCase() + n + '.jpg';
     }
     </script>
 </head>
