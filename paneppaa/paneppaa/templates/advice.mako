@@ -23,31 +23,31 @@
 </%block>
 
 <div class="container">
-  <img src="static/img/fiori.jpg" class="img-rounded span12" id="topimg"/>
+  <img src="static/img/fiori.jpg" class="img-rounded" id="topimg"/>
   <div id="middle">
     <div class="middle align-center">
-      <div class="span12">
+      <div>
         <div class="well well-large well-green margin">
 
-          <b>CONSIGLI PER I NUOVI PROPRIETARI</b><br/>
+          <b><h3>CONSIGLI PER I NUOVI PROPRIETARI</h3></b><br/>
           <div>
             Queste poche righe sono state scritte con l'intento di far si che i nuovi proprietari
             possano passare una vita il più possibile serena con il loro nuovo amico peloso.
-          </div>
+          </div><br/>
           <div>
             Abbiamo scritto questi consigli in base alle nostre esperienze (senza pretese di
             completezza o competenze da navigati educatori cinofili). Sappiamo infatti che a volte
             capirsi tra specie diverse può essere difficile, e sicuramente non immediato.<br/>
-            Il cane comunica in modo diverso da noi, la maggior parte dei cani si adegua al nostri
+            Il cane comunica in modo diverso da noi, la maggior parte dei cani si adegua ai nostri
             “strani” modi, ma alcuni potrebbero non capirvi immediatamente.
-          </div>
+          </div><br/>
           <div>
             Ricordati che per il momento tu non sei il suo “adorato padroncino” ma solo un umano
             che lo porta in un ambiente nuovo, che può essere certamente più piacevole del canile,
             ma il cane non lo sa ancora.
-          </div>
+          </div><br/>
           <div>
-            Parti dal presupposto che per lui è tutto nuovo.
+            Parti dal presupposto che per lui è tutto nuovo.<br/>
             Il tuo nuovo amico potrebbe non sapere che non si può salire sul divano, se vuoi farlo
             scendere non tiralo, lui non sa che lo fai solo per proteggere il nuovissimo
             rivestimento! <br/>
@@ -55,39 +55,38 @@
             cuccia e premialo nuovamente.<br/>
             Il modo migliore è la prevenzione, copri il divano o rendilo inagibile fino a che il
             tuo amico non ha capito che il suo posto è la cuccia.
-          </div>
+          </div><br/>
           <div>
             Abbi pazienza se sporca in casa, in genere ogni cane preferisce sporcare all'esterno,
             ma deve prendere i tuoi ritmi, vedrai che una volta abituato non ci saranno problemi.<br/>
             Non pretendere che il primo giorno si lasci prendere in braccio o pulire le zampette al
-            ritorno da una passeggiata. (i cani non amano essere toccati sulle zampe né farsi mettere
-            una mano in testa dall'ultimo arrivato)
-          </div>
+            ritorno da una passeggiata. (I cani non amano essere toccati sulle zampe né farsi mettere
+            una mano in testa dall'ultimo arrivato).
+          </div><br/>x
           <div>
-            Non portarlo dal veterinario, alla toelettatura, all'area cani, a conoscere tutti i tuoi<br/>
+            Non portarlo dal veterinario, alla toelettatura, all'area cani, a conoscere tutti i tuoi
             amici e parenti il primo giorno...
-          </div>
+          </div><br/>
           <div>
             Guadagnati la sua fiducia, come? Con dei giochi, ma anche insegnandogli cose nuove!
             I cani adorano imparare! Hanno bisogno che tu sia la loro guida!
-          </div>
+          </div><br/>
           <div>
             Non riportarlo al canile solo perché le cose non vanno subito come pensavi, ogni cane,
             specialmente se preso in un canile ha delle esperienze alle spalle che potrebbero non
             essere state piacevoli.<br/>
             Ha bisogno di tempo per fidarsi di te (o di voi).
-          </div>
-
+          </div><br/>
+          <br/>
           <div>
-            <b>GIOCHI:</b>
-          </div>
+            <b><h4>GIOCHI:</h4></b>
+          </div><br/>
           <div>
-
             Il miglior modo di insegnare qualcosa al cane è tramite il gioco. I giochi che
             coinvolgono l'olfatto sono i migliori per i cani che hanno bisogno di sfogare le proprie
             energie perché una consistente parte del cervello del cane è adibita all'olfatto.<br/>
             Ecco alcuni giochi che ti aiuteranno a guadagnarti la fiducia del tuo nuovo amico.
-          </div>
+          </div><br/>
           <div>
             <ol>
               <li>

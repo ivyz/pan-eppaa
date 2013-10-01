@@ -24,8 +24,8 @@
       </%header:insert_header>
       </%block>
 
-      <img src="static/img/events.jpg" class="img-rounded span12" id="topimg"/>
-        <div class="container-fluid span12">
+      <img src="static/img/events.jpg" class="img-rounded" id="topimg"/>
+        <div class="container-fluid">
         <h1>Eventi</h1>
 
         % for d in events:

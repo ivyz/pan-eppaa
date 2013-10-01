@@ -23,10 +23,10 @@
 </%block>
 
   <div class="container">
-    <img src="static/img/fiori.jpg" class="img-rounded span12" id="topimg"/>
+    <img src="static/img/fiori.jpg" class="img-rounded" id="topimg"/>
     <div id="middle">
       <div class="middle align-center">
-      <div class="span12">
+      <div>
         <div class="well well-large well-green margin">
           <h5>
             In occasione della prossima denuncia dei redditi, scegliete
