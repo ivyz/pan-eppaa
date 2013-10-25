@@ -200,9 +200,25 @@ def main(argv=sys.argv):
             name= 'Ali e Saba',
             image= 'Ali_Saba_big.jpg',
             description= u'Adozione d\'amore! Hanno sempre vissuto insieme, adottati proprio dal nostro canile, molto tempo fa, sono stati da poco nuovamente ceduti. Ormai sono anziani ed necessario adottarli insieme. Sono molto timidi e necessitano di incontri conoscitivi. Sarebbero degli ottimi cani da appartamento e da compagnia per anziani.',
-            born_year= 200,
+            born_year= 2000,
             kind= 'Husky',
             taglia= 'medio-grande'
+        ),
+        dict(
+            name= 'Morgan',
+            image= 'Morgan_big.jpg',
+            description= u'',
+            born_year= 2010,
+            kind= 'Amsaff',
+            taglia= 'medio-grande'
+        ),
+        dict(
+            name= 'Buster',
+            image= 'Buster_big.jpg',
+            description= u'Splendido volpino, molto intelligente, ama i giochi di attivazione mentale, sempre disposto ad imparare cose nuove. Ottimo cane da appartamento e da compagnia. Non ama molto la manipolazione per cui ha bisogno dei suoi tempi, sarà lui a decidere quando è pronto per ricevere le coccole.',
+            born_year= 2009,
+            kind= 'Volpino Italiano',
+            taglia= 'piccola'
         )];
 
         for dog in dogs:
