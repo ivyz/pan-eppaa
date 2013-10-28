@@ -23,7 +23,7 @@
 </%block>
 
 <div class="container">
-  <img src="static/img/fiori.jpg" class="img-rounded" id="topimg"/>
+  <img src="static/img/advice.jpg" class="img-rounded" id="topimg"/>
   <div id="middle">
     <div class="middle align-center">
       <div>
