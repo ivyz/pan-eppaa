@@ -5,6 +5,11 @@ from sqlalchemy import (
     Date
     )
 
+from pyramid.security import (
+    Allow,
+    Everyone,
+    )
+
 from sqlalchemy.ext.declarative import declarative_base
 
 from sqlalchemy.orm import (
@@ -64,3 +69,9 @@ class News(Base):
         self.date = date
         self.image = image
         self.video = video
+
+class RootFactory(object):
+    __acl__ = [ (Allow, Everyone, 'view'),
+                (Allow, 'group:editors', 'edit') ]
+    def __init__(self, request):
+        pass

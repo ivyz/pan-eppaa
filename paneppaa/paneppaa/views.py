@@ -116,7 +116,16 @@ def news_view(request):
     except DBAPIError:
         return Response(conn_err_msg, content_type='text/plain', status_int=500)
 
-    return {'newss': news, 'project':'paneppaa'}
+        return {'news': news, 'project':'paneppaa'}
+
+@view_config(route_name='editnews', renderer='paneppaa:templates/editnews.mako', permission='edit')
+def editnews_view(request):
+    try:
+        news = DBSession.query(News).filter(News.id==request.matchdict['id']).first()
+    except DBAPIError:
+        return Response(conn_err_msg, content_type='text/plain', status_int=500)
+
+        return {'news': news, 'project':'paneppaa'}
 
 
 #HELP
