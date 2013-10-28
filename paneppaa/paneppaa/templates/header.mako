@@ -44,6 +44,13 @@
           %else:
             <li>
           %endif
+          <a href="${request.route_url('news')}">News</a>
+          </li>
+          % if active == 'news':
+            <li class="active">
+          %else:
+            <li>
+          %endif
           <a href="${request.route_url('help')}">Aiutaci</a>
           </li>
           <!--li>

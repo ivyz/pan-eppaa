@@ -107,6 +107,12 @@ def about_view(request):
     return {'project':'paneppaa'}
 
 
+#NEWS
+@view_config(route_name='news', renderer='paneppaa:templates/news.mako')
+def news_view(request):
+    return {'project':'paneppaa'}
+
+
 #HELP
 @view_config(route_name='help', renderer='paneppaa:templates/help.mako')
 def help_view(request):

@@ -24,6 +24,7 @@
           <a href="${request.route_url('about')}">Su di noi</a>
           <a href="${request.route_url('help')}">Aiutaci</a>
           <a href="${request.route_url('advice')}">Consigli</a>
+          <a href="${request.route_url('news')}">News</a>
         </p>
       </div>
     </div>

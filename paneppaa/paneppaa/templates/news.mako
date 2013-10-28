@@ -17,7 +17,7 @@
 <body>
   <div class="container">
     <%block name="header_bar">
-      <%header:insert_header active='about'>
+      <%header:insert_header active='news'>
       ${request}
     </%header:insert_header>
     </%block>
