@@ -1,8 +1,11 @@
 #*#
+paneppaa/paneppaa.egg-info/SOURCES.txt
+paneppaa/paneppaa/models.pyc
 *.pyc
 *.db
 emacs.desktop
 .emacs.desktop.lock
+bin
 ./include
 ./lob
 ./local
