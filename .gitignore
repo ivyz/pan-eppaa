@@ -5,7 +5,7 @@ paneppaa/paneppaa/models.pyc
 *.db
 emacs.desktop
 .emacs.desktop.lock
-bin
-./include
-./lob
-./local
+bin/
+include/
+lob/
+local/
