@@ -16,6 +16,7 @@ from ..models import (
     Dog,
     Base,
     Event,
+    News
     )
 
 def usage(argv):
@@ -247,4 +248,16 @@ def main(argv=sys.argv):
         for evt in events:
             e = Event(title=evt['title'], date=evt['date'],
                       description=evt['description'])
+            DBSession.add(e)
+
+    with transaction.manager:
+        news = [dict(
+            title = 'Incontri Scuola Cinofila Balsamo',
+            text = u'Nei weekend 5-6 e 19-20 Ottobre 2013 si sono svolte presso il canile delle lezioni dal titolo \'Il cane di canile\' con la Scuola Cinofile Balsamo. Dei coinvolgentissimi incontri hai quali hanno partecipato gli alunni della Scuola Cinofila in collaborazione con i volontari e l\'associazione PAN -  EPPAA. Un ringraziamento particolare va fatto all\'insegnante Carlo Pirola della Lega del Cane di Milano e all\'educatore cinofilo Fabrizio Balsamo, titolare della scuola, i quali hanno reso possibile quest\'iniziativa che è stata molto formativa a detta di tutti i partecipanti. Speriamo in una profiqua e continua collaborazione con la scuola.',
+            date = date(2013, 10, 5)
+        )];
+
+        for nws in news:
+            e = News(title=nws['title'], date=nws['date'],
+                      text=nws['text'])
             DBSession.add(e)
