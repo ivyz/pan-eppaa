@@ -20,6 +20,7 @@ def main(global_config, **settings):
     config.add_route('eventdetail', 'events/{id}')
     config.add_route('about', '/about')
     config.add_route('advice', '/advice')
+    config.add_route('news', '/news')
     config.add_route('help', '/help')
     config.scan()
     return config.make_wsgi_app()
