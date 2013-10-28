@@ -6,7 +6,8 @@ from sqlalchemy.exc import DBAPIError
 from .models import (
     DBSession,
     Dog,
-    Event
+    Event,
+    News
     )
 
 
@@ -110,7 +111,12 @@ def about_view(request):
 #NEWS
 @view_config(route_name='news', renderer='paneppaa:templates/news.mako')
 def news_view(request):
-    return {'project':'paneppaa'}
+    try:
+       news = DBSession.query(News).order_by('id')
+    except DBAPIError:
+        return Response(conn_err_msg, content_type='text/plain', status_int=500)
+
+    return {'newss': news, 'project':'paneppaa'}
 
 
 #HELP

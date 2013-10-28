@@ -48,3 +48,19 @@ class Event(Base):
         self.description = description
         self.date = date
         self.image = image
+
+class News(Base):
+    __tablename__ = 'news'
+    id = Column(Integer, primary_key=True)
+    title = Column(Text, unique=True)
+    date = Column(Date)
+    text = Column(Text)
+    image = Column(Text)
+    video = Column(Text)
+
+    def __init__(self, title, date, text, image=None, video=None):
+        self.title = title
+        self.text = text
+        self.date = date
+        self.image = image
+        self.video = video
