@@ -23,15 +23,35 @@
     </%block>
 
     <img src="static/img/news.jpg" class="img-rounded" id="topimg"/>
-     <div id="middle">
-      <div class="middle align-center">
-        <div>
-          <div class="well well-large well-green margin">
+        <div class="container-fluid">
+        <h1>News</h1>
+
+        % for d in news:
+        <div class="row">
+          <div class="span8">
+            <!--a href="${request.route_url('events')}/${d.id}"><h3>${d.title}</h3></a-->
+            <h3>${d.title}</h3>
           </div>
+          <div class="span4 date">Quando: ${d.date}</div>
         </div>
+        <div class="row">
+          <div class="span3">
+            <img src="${d.image}" class="img-rounded"/>
+          </div>
+          <div class="span9">
+            <br/>${d.text}
+          </div>
+          % if d.video:
+             <div class="span3">
+               <video width="320" height="240" controls>
+                 <source src="${d.video}" type="video/mp4"/>
+               </video>
+             </div>
+          % endif
+        </div>
+        %endfor
       </div>
     </div>
-  </div>
   <%block name="footer_bar">
       <%footer:insert_footer></%footer:insert_footer>
   </%block>
