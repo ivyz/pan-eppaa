@@ -118,7 +118,9 @@ def news_view(request):
 
         return {'news': news, 'project':'paneppaa'}
 
-@view_config(route_name='editnews', renderer='paneppaa:templates/editnews.mako', permission='edit')
+@view_config(route_name='editnews', renderer='paneppaa:templates/editnews.mako'
+             #, permission='edit'
+    )
 def editnews_view(request):
     try:
         news = DBSession.query(News).filter(News.id==request.matchdict['id']).first()
@@ -127,6 +129,17 @@ def editnews_view(request):
 
         return {'news': news, 'project':'paneppaa'}
 
+
+@view_config(route_name='addnews', renderer='paneppaa:templates/addnews.mako'
+             #, permission='edit'
+    )
+def addnews_view(request):
+    try:
+        news = DBSession.query(News).filter(News.id==request.matchdict['id']).first()
+    except DBAPIError:
+        return Response(conn_err_msg, content_type='text/plain', status_int=500)
+
+        return {'news': news, 'project':'paneppaa'}
 
 #HELP
 @view_config(route_name='help', renderer='paneppaa:templates/help.mako')
