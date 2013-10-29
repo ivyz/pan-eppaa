@@ -29,6 +29,8 @@
         <h1>Eventi</h1>
 
         % for d in events:
+          <% eventname = d.title.lower().replace(" ", "").replace("'", ""); %>
+
         <div class="row">
           <div class="span8">
             <!--a href="${request.route_url('events')}/${d.id}"><h3>${d.title}</h3></a-->
@@ -38,7 +40,7 @@
         </div>
         <div class="row">
           <div class="span3">
-            <img src="img/mercatino1.jpg" class="img-rounded"/>
+            <img src="${request.static_url('paneppaa:static/img')}/${eventname}.jpg" class="img-rounded"/>
           </div>
           <div class="span9">
             <br/>Descrizione: ${d.description}
